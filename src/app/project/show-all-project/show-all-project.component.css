@@ -1,0 +1,16 @@
+tr{
+    background-color: aliceblue;
+}
+#start{
+    background-color: green;
+}
+#start:hover{
+     background-color: coral;
+     color: white;
+}
+#close{
+    background-color: yellow;
+}
+#cancel{
+    background-color: red;
+}

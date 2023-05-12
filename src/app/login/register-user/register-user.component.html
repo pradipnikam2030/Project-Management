@@ -1,0 +1,20 @@
+<br><br>
+   <div class="container">
+    <label for="">Username: </label> 
+    <input type="text" [(ngModel)]="register.username" name="" id="" placeholder="ex. abc123" required=""> <br> <br>
+    <label for="">First Name: </label>
+    <input type="text" [(ngModel)]="register.firstname" name="" id="" placeholder=" Type First Name" required=""> <br> <br>
+    <label for="">Last Name: </label>
+    <input type="text" [(ngModel)]="register.lastname" name="" id="" placeholder=" Type Last Name" required=""><br> <br>
+    <label for="">E-Mail: </label>
+    <input type="text" [(ngModel)]="register.email" name="" id="" placeholder="ex. abc234@gmail.com" required="" ><br> <br>
+    <label for="">Mobile no. </label>
+    <input type="text" [(ngModel)]="register.mobile" name="" id="" placeholder="ex. 987456120"><br> <br>
+    <label for="">Passowrd: </label>
+    <input type="password" [(ngModel)]="register.passoword" name="" id="" placeholder="enter strong passoword"><br> <br>
+    <button (click)="registerUser()" mat-raised-button color="accent">Register</button>
+
+</div>
+   
+    <h3>{{result}}</h3>
+

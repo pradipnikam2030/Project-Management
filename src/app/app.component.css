@@ -1,0 +1,19 @@
+button{
+    margin: 2px;
+
+}
+.but{
+    margin-left: 170px;
+    
+    padding-top: 10px;
+}
+.container {
+    width: 500px;
+    height: 400px;
+    margin: 100px;
+    margin-left: 350px;
+    padding-right: 30px;
+    outline: solid 1px black;
+  }
+  
+  

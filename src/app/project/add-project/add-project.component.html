@@ -1,0 +1,73 @@
+<br>
+
+<div>
+    <h1>Create Project</h1>
+
+    Project Title: 
+    <textarea name="" [(ngModel)]="details.projectName" id="" cols="40" rows="2" placeholder="Enter Project Name"></textarea> <br> <br>
+
+    Reason:
+    <select name="" id="" [(ngModel)]="details.reason" >
+        <option value="">---select---</option>
+        <option value="Business">For business</option>
+        <option value="Dealership">For Dealership</option>
+        <option value="Transport">For Transport</option>
+    </select><br> <br>
+
+    Type: 
+    <select name="" id="" [(ngModel)]="details.type">
+        <option value="">---select---</option>
+        <option value="Internal">Internal</option>
+        <option value="External">External</option>
+        <option value="Vendor">Vendor</option>
+    </select><br> <br>
+    Division: 
+   <select name="" id="" [(ngModel)]="details.division">
+    <option value="">---select---</option>
+    <option value="Filters">Filters</option>
+    <option value="Compressor">Compressor</option>
+    <option value="Pumps">Pumps</option>
+    <option value="Glass">Glass</option>
+    <option value="WaterHeater">Water Heater</option>
+   </select> <br> <br>
+   Category: 
+   <select name="" id="" [(ngModel)]="details.category">
+    <option value="">---select---</option>
+    <option value="qualityA">Quality A</option>
+    <option value="qualityB">Quality B</option>
+    <option value="qualityC">Quality C</option>
+    <option value="qualityD">Quality D</option>
+   </select> <br> <br>
+   Priority: 
+   <select name="" id=""[(ngModel)]="details.priority">
+    <option value="">---select---</option>
+    <option value="High">High</option>
+    <option value="Medium">Medium</option>
+    <option value="Low">Low</option>
+   </select> <br> <br>
+   Department: 
+   <select name="" id="" [(ngModel)]="details.department">
+    <option value="">---select---</option>
+    <option value="Strategy">Strategy</option>
+    <option value="Finance">Finance</option>
+    <option value="Quality">Quality</option>
+    <option value="Maintenance">Maintenance</option>
+    <option value="Stores">Stores</option>
+   </select> <br> <br>
+    Start Date: 
+    <input type="date" name="" id="" [(ngModel)]="details.startDate"> <br><br>
+    End Date: 
+    <input type="date" name="" id="" [(ngModel)]="details.endDate"> <br><br>
+ 
+   Location: 
+   <select name="" id="" [(ngModel)]="details.location">
+    <option value="">---select---</option>
+    <option value="Mumbai">Mumbai</option>
+    <option value="Pune">Pune</option>
+    <option value="Delhi">Delhi</option>
+   </select> <br> <br>
+
+      Status: <span>{{statusValue}}</span> <br><br>
+     <button (click)="saveProject()">Save Project</button>
+
+</div>

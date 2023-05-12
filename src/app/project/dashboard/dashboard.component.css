@@ -1,0 +1,16 @@
+table{
+    background-color: lightblue;
+}
+
+.td{
+       padding-left: 50px;
+       text-align: center;
+}
+.tr{
+    font-size: large;
+    font-weight: bold;
+    color:coral
+}
+.count{
+       font-weight: bold;
+}

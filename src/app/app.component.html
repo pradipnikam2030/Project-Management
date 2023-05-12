@@ -1,0 +1,24 @@
+<div *ngIf="get!=3" class="container">
+    <div class="circle">
+
+        <div class="but">
+            <button [disabled]="show==1" (click)="showThis(1)" mat-raised-button color="primary">Login</button>
+            <!-- <button   >Login</button> -->
+            <button [disabled]="show==2" (click)="showThis(2)" mat-raised-button color="accent">Register</button>
+        </div>
+
+
+        <div *ngIf="get==1">
+
+            <app-login-user></app-login-user>
+        </div>
+        <div *ngIf="get==2">
+
+            <app-register-user></app-register-user>
+        </div>
+    </div>
+</div>
+<div *ngIf="get==3">
+
+    <app-dashboard></app-dashboard>
+</div>

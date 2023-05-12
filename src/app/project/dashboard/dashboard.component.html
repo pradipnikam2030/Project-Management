@@ -1,0 +1,37 @@
+<button [disabled]="show==0" (click)="showMethod(0)" (click)="getCountProject()">Dashboard</button>
+<button [disabled]="show==1" (click)="showMethod(1)">AddProject</button>
+<button [disabled]="show==2" (click)="showMethod(2)">ShowAllProject</button>
+
+<div *ngIf="show==1">
+    <app-add-project></app-add-project>
+</div>
+<div *ngIf="show==2">
+    <app-show-all-project></app-show-all-project>
+</div>
+
+<div *ngIf="show==0">
+    <h1 *ngIf="show==0">Project Details....</h1>
+   
+      <div>
+        <table>
+             <tr class="td tr">
+                <td class="td">Total Projects</td>
+                <td class="td">Running</td>
+                <td class="td">Closed</td>
+                <td class="td">Cancelled</td>
+             </tr>
+
+             <tr>
+                <td class="td count">{{projectCount.totalCount}}</td>
+                <td class="td count">{{projectCount.runningCount}}</td>
+                <td class="td count">{{projectCount.closedCount}}</td>
+                <td class="td count">{{projectCount.cancelledCount}}</td>
+             </tr>
+
+        </table>
+      </div>
+      
+
+</div>
+
+

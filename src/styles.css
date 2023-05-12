@@ -1,0 +1,15 @@
+
+
+
+
+ body{
+    background-image: url("C:\Users\Pradip\Downloads\pexels-ann-h-1762851.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+
+ }
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
